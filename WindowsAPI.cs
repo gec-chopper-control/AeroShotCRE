@@ -224,7 +224,7 @@ namespace AeroShot
         internal static extern void DwmGetColorizationParameters(out DWM_COLORIZATION_PARAMS parameters);
 
         [DllImport("dwmapi.dll", EntryPoint = "#131", PreserveSig = false)]
-        internal static extern void DwmSetColorizationParameters(ref DWM_COLORIZATION_PARAMS parameters, bool unknown);
+        internal static extern void DwmSetColorizationParameters(ref DWM_COLORIZATION_PARAMS parameters, bool isTemporary);
 
         [DllImport("dwmapi.dll", PreserveSig = false)]
         public static extern void DwmEnableComposition(bool bEnable);
